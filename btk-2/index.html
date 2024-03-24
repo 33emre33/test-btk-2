@@ -1,0 +1,520 @@
+<!doctype html>
+<html lang="tr-TR">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap demo</title>
+    <link rel="stylesheet" href="assets/css/style.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+</head>
+
+<body>
+
+    <header class="overflow-hidden ">
+        <div class="container ">
+            <nav class="navbar navbar-expand-lg  py-4">
+                <div class="container-fluid">
+                    <a class="navbar-brand" href="#"><img src="assets/img/header/Logo.svg"></a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav me-auto mb-2 mb-lg-0 d-flex gap-3 ps-md-5 text-center py-4 py-md-0">
+                            <li class="nav-item ">
+                                <a class="nav-link  color-274C5B fw-bold header-link-custom" aria-current="page" href="#">Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link color-274C5B fw-bold header-link-custom " aria-current="page" href="#">About</a>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link color-274C5B fw-bold header-link-custom dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                    Pages
+                                </a>
+                                <ul class="dropdown-menu text-center border-0">
+                                    <li><a class="dropdown-item color-274C5B fw-bold header-link-custom" href="#">Page 1</a></li>
+                                    <li><a class="dropdown-item color-274C5B fw-bold header-link-custom" href="#">Page 2</a></li>
+                                    <li>
+
+                                    </li>
+                                    <li><a class="dropdown-item color-274C5B fw-bold header-link-custom" href="#">Page 3</a></li>
+                                </ul>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link color-274C5B fw-bold header-link-custom" aria-current="page" href="#">Projects</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link color-274C5B fw-bold header-link-custom" aria-current="page" href="#">News</a>
+                            </li>
+
+
+
+
+                        </ul>
+                        <div class="header-end-item-wrapper d-flex flex-md-row flex-column align-items-center gap-3 flex-wrap ps-md-3 justify-content-center ">
+                            <div class="search-input-wrapper d-inline-block  position-relative rounded-5 shadow-sm order-2 order-md-0">
+                                <input type="text" class="py-1 ps-3 header-search-input rounded-5 border-none border border-0 bg-light  text-secondary">
+                                <button type="submit" class="search-btn  border border-0 d-flex justify-content-center align-items-center rounded-5 p-2 position-absolute end-0 top-0 ">
+
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
+                                        <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001q.044.06.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1 1 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0" />
+                                    </svg>
+
+                                </button>
+                            </div>
+                            <div class="cart-item-wrapper d-flex align-items-center border border-secondary rounded-5 p-1 gap-1 order-1">
+                                <div class="cart-ico p-2 rounded-5 d-flex justify-content-center align-items-center">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-cart" viewBox="0 0 16 16">
+                                        <path d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5M3.102 4l1.313 7h8.17l1.313-7zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4m7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4m-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2m7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2" />
+                                    </svg>
+                                </div>
+                                <div class="cart-word fw-semibold">
+                                    Cart (0)
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </header>
+    <!-- 
+    <section>
+        <div class="background-relative position-relative overflow-hidden">
+            <div class="container py-5">
+                <div class="extra-py py-5 ">
+                    <div class="swiper mySwiper ">
+                        <div class="swiper-wrapper ">
+                            <div class="swiper-slide ">
+                                <div class="header-banner-all-wrapper d-flex flex-column align-items-start gap-3 py-5 px-5 my-5 position-relative z-3">
+                                    <div class="header-banner-heading d-flex flex-column gap-2">
+                                        <div class="header-banner-heading-first petit-font fw-bold color-68A47F fs-4">100% Naturel Food</div>
+                                        <div class="header-banner-heading-two color-274C5B fw-bold display-5 w-100">Choose the best healthier way of life</div>
+                                    </div>
+                                    <div class="header-banner-btn-wrapper d-inline-block ">
+                                        <a href="#?" class="header-banner-btn d-flex align-items-center gap-2 color-274C5B py-3 px-3 rounded-2 fw-bold text-decoration-none overflow-hidden">
+                                            <div class="">Expolere Now</div>
+                                            <svg class="header-banner-btn-arrow-ico" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-right-circle-fill" viewBox="0 0 16 16">
+                                                <path d="M8 0a8 8 0 1 1 0 16A8 8 0 0 1 8 0M4.5 7.5a.5.5 0 0 0 0 1h5.793l-2.147 2.146a.5.5 0 0 0 .708.708l3-3a.5.5 0 0 0 0-.708l-3-3a.5.5 0 1 0-.708.708L10.293 7.5z" />
+                                            </svg>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+            </div>
+            <div class="header-banner-background-img-1 position-absolute top-0 h-100 w-100 z-0">
+                <img src="assets/img/header-banner/img-2.png" alt="" class="w-100 h-100 ">
+            </div>
+            <div class="header-banner-background-img-2 position-absolute top-0 h-100 w-100 z-n1 ">
+                <img src="assets/img/header-banner/img-back.png" alt="" class="w-100  h-100  ">
+
+
+            </div>
+    </section>
+
+    <section>
+        <div class="container py-5">
+            <div class="row py-5">
+                <div class="col-6 p-5 pe-3 ">
+                    <div class="get-section-card-wrapper position-relative">
+                        <img src="assets/img/get-section/img-1.png" alt="" class="get-section-card-img w-100">
+                        <div class="get-section-card-content position-absolute px-5 text-white fs-4 h-100 w-100 d-flex flex-column justify-content-center">
+                            <div class="get-section-card-content-top fw-bold">Natural!!</div>
+                            <div class="get-section-card-content-bottom fw-bold fs-3 w-50 ">Get Garden Fresh Fruits</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-6 p-5 ps-3 ">
+                    <div class="get-section-card-wrapper position-relative">
+                        <img src="assets/img/get-section/img-2.png" alt="" class="get-section-card-img w-100">
+                        <div class="get-section-card-content position-absolute px-5  fs-4 h-100 w-100 d-flex flex-column justify-content-center">
+                            <div class="get-section-card-content-top fw-bold color-68A47F petit-font">Offer!!</div>
+                            <div class="get-section-card-content-bottom fw-bold fs-3 w-50 color-274C5B">Get 10% off on Vegatables</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="color-bg-F9F8F8">
+        <div class="container ">
+            <div class="row py-5">
+                <div class="col-6 py-5">
+                    <div class="about-start-img-wrapper">
+                        <img src="assets/img/about/back.png" alt="" class="w-100">
+                    </div>
+                </div>
+                <div class="col-6 py-5">
+                    <div class="about-end-wrapper d-flex flex-column gap-5">
+                        <div class="about-end-top-content-wrapper d-flex flex-column gap-2">
+                            <div class=" fw-bold color-68A47F petit-font fs-4">About Us</div>
+                            <div class=" fw-bold fs-1  color-274C5B">We Believe in Working Accredited Farmers</div>
+                            <div class="text-secondary">Simply dummy text of the printing and typesetting industry. Lorem had ceased to
+                                been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley.</div>
+                        </div>
+                        <div class="about-end-top-icon-wrapper d-flex flex-column gap-4">
+                            <div class="about-end-top-icon-card d-flex gap-4 align-items-center">
+                                <div class="ico-wrapper bg-white rounded-2 d-inline-block p-3 position-relative">
+                                    <img src="assets/img/about/ico-1.svg" alt="" class="position-relative z-3">
+                                </div>
+                                <div class="content-wrapper d-flex flex-column">
+                                    <div class=" color-274C5B fw-bold fs-4">Organic Foods Only</div>
+                                    <div class="text-secondary">Simply dummy text of the printing and typesetting industry. Lorem Ipsum</div>
+                                </div>
+                            </div>
+                            <div class="about-end-top-icon-card d-flex gap-4 align-items-center">
+                                <div class="ico-wrapper bg-white rounded-2 d-inline-block p-3 position-relative">
+                                    <img src="assets/img/about/ico-2.svg" alt="" class="position-relative z-3">
+                                </div>
+                                <div class="content-wrapper d-flex flex-column">
+                                    <div class=" color-274C5B fw-bold fs-4">Quality Standards</div>
+                                    <div class="text-secondary">Simply dummy text of the printing and typesetting industry. Lorem Ipsum</div>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="about-end-btn-wrapper">
+                            <div class="about-end-btn d-inline-block ">
+                                <a href="#?" class="header-banner-btn bg-blue d-flex align-items-center gap-2  py-3 px-4 rounded-2 fw-bold text-decoration-none overflow-hidden">
+                                    <div class="text-white">Show Now</div>
+                                    <svg class="header-banner-btn-arrow-ico bg-blue-ico text-white" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-right-circle-fill" viewBox="0 0 16 16">
+                                        <path d="M8 0a8 8 0 1 1 0 16A8 8 0 0 1 8 0M4.5 7.5a.5.5 0 0 0 0 1h5.793l-2.147 2.146a.5.5 0 0 0 .708.708l3-3a.5.5 0 0 0 0-.708l-3-3a.5.5 0 1 0-.708.708L10.293 7.5z" />
+                                    </svg>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+-->
+    <section>
+        <div class="container">
+            <div class="categori-section-heading text-center py-5">
+                <div class=" fw-bold color-68A47F petit-font fs-4">Categories </div>
+                <div class=" fw-bold fs-2  color-274C5B">Our Products</div>
+            </div>
+            <div class="row g-3">
+                <div class="col-12 col-md-6 col-lg-4 col-xl-3 ">
+                    <div class="categori-card-wrapper bg-secondary-subtle  rounded-5 py-3 px-1 ">
+                        <div class="categori-img-wrapper position-relative py-4">
+                            <img src="assets/img/categori/brocoli.png" alt="" class="w-100 h-100">
+                            <div class="categori-img-ticket position-absolute  color-bg-274C5B d-inline-block py-1 px-2 rounded-3 text-white">
+                                Vegetable
+                            </div>
+                        </div>
+                        <div class="categori-content-wrapper px-3 d-flex flex-column gap-2 ">
+                            <div class="categori-content-heading color-274C5B fs-5 fw-semibold">
+                                Calaberse Broccoli
+                            </div>
+                            <hr />
+                            <div class="categori-content-word color-274C5B d-flex justify-content-between align-items-center">
+                                <div class="categori-content-price d-flex gap-2 align-items-center ">
+                                    <div class="old-price text-secondary text-decoration-line-through">
+                                        &dollar;20.00
+                                    </div>
+                                    <div class="new-price fw-semibold fs-5">
+                                        &dollar;13.00
+                                    </div>
+                                </div>
+                                <div class="categori-content-stars d-flex gap-1">
+                                    <div class="star-ico active "></div>
+                                    <div class="star-ico active "></div>
+                                    <div class="star-ico active "></div>
+                                    <div class="star-ico active "></div>
+                                    <div class="star-ico"></div>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-4 col-xl-3">
+                    <div class="categori-card-wrapper bg-secondary-subtle  rounded-5 py-3 px-1 ">
+                        <div class="categori-img-wrapper position-relative py-4">
+                            <img src="assets/img/categori/banana.png" alt="" class="w-100 h-100">
+                            <div class="categori-img-ticket position-absolute  color-bg-274C5B d-inline-block py-1 px-2 rounded-3 text-white">
+                                Fresh
+                            </div>
+                        </div>
+                        <div class="categori-content-wrapper px-3 d-flex flex-column gap-2 ">
+                            <div class="categori-content-heading color-274C5B fs-5 fw-semibold">
+                                Fresh Banana Friutes
+                            </div>
+                            <hr />
+                            <div class="categori-content-word color-274C5B d-flex justify-content-between align-items-center">
+                                <div class="categori-content-price d-flex gap-2 align-items-center ">
+                                    <div class="old-price text-secondary text-decoration-line-through">
+                                        &dollar;20.00
+                                    </div>
+                                    <div class="new-price fw-semibold fs-5">
+                                        &dollar;14.00
+                                    </div>
+                                </div>
+                                <div class="categori-content-stars d-flex gap-1">
+                                    <div class="star-ico active "></div>
+                                    <div class="star-ico active "></div>
+                                    <div class="star-ico active "></div>
+                                    <div class="star-ico active "></div>
+                                    <div class="star-ico active"></div>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-4 col-xl-3">
+                    <div class="categori-card-wrapper bg-secondary-subtle  rounded-5 py-3 px-1 ">
+                        <div class="categori-img-wrapper position-relative py-4">
+                            <img src="assets/img/categori/nuts.png" alt="" class="w-100 h-100   ">
+                            <div class="categori-img-ticket position-absolute  color-bg-274C5B d-inline-block py-1 px-2 rounded-3 text-white">
+                                Millets
+                            </div>
+                        </div>
+                        <div class="categori-content-wrapper px-3 d-flex flex-column gap-2 ">
+                            <div class="categori-content-heading color-274C5B fs-5 fw-semibold">
+                                White Nuts
+                            </div>
+                            <hr />
+                            <div class="categori-content-word color-274C5B d-flex justify-content-between align-items-center">
+                                <div class="categori-content-price d-flex gap-2 align-items-center ">
+                                    <div class="old-price text-secondary text-decoration-line-through">
+                                        &dollar;20.00
+                                    </div>
+                                    <div class="new-price fw-semibold fs-5">
+                                        &dollar;15.00
+                                    </div>
+                                </div>
+                                <div class="categori-content-stars d-flex gap-1">
+                                    <div class="star-ico active "></div>
+                                    <div class="star-ico active "></div>
+                                    <div class="star-ico active "></div>
+                                    <div class="star-ico active "></div>
+                                    <div class="star-ico"></div>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-12 col-md-6 col-lg-4 col-xl-3 ">
+                    <div class="categori-card-wrapper bg-secondary-subtle  rounded-5 py-3 px-1 ">
+                        <div class="categori-img-wrapper position-relative py-4">
+                            <img src="assets/img/categori/tomato.png" alt="" class="w-100 h-100">
+                            <div class="categori-img-ticket position-absolute  color-bg-274C5B d-inline-block py-1 px-2 rounded-3 text-white">
+                                Vegetable
+                            </div>
+                        </div>
+                        <div class="categori-content-wrapper px-3 d-flex flex-column gap-2 ">
+                            <div class="categori-content-heading color-274C5B fs-5 fw-semibold">
+                                Vegan Tomato
+                            </div>
+                            <hr />
+                            <div class="categori-content-word color-274C5B d-flex justify-content-between align-items-center">
+                                <div class="categori-content-price d-flex gap-2 align-items-center ">
+                                    <div class="old-price text-secondary text-decoration-line-through">
+                                        &dollar;20.00
+                                    </div>
+                                    <div class="new-price fw-semibold fs-5">
+                                        &dollar;17.00
+                                    </div>
+                                </div>
+                                <div class="categori-content-stars d-flex gap-1">
+                                    <div class="star-ico active "></div>
+                                    <div class="star-ico active "></div>
+                                    <div class="star-ico active "></div>
+                                    <div class="star-ico active "></div>
+                                    <div class="star-ico"></div>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-4 col-xl-3">
+                    <div class="categori-card-wrapper bg-secondary-subtle  rounded-5 py-3 px-1 ">
+                        <div class="categori-img-wrapper position-relative py-4">
+                            <img src="assets/img/categori/bean.png" alt="" class="w-100 h-100">
+                            <div class="categori-img-ticket position-absolute  color-bg-274C5B d-inline-block py-1 px-2 rounded-3 text-white">
+                                Healt
+                            </div>
+                        </div>
+                        <div class="categori-content-wrapper px-3 d-flex flex-column gap-2 ">
+                            <div class="categori-content-heading color-274C5B fs-5 fw-semibold">
+                                Mung Bean
+                            </div>
+                            <hr />
+                            <div class="categori-content-word color-274C5B d-flex justify-content-between align-items-center">
+                                <div class="categori-content-price d-flex gap-2 align-items-center ">
+                                    <div class="old-price text-secondary text-decoration-line-through">
+                                        &dollar;20.00
+                                    </div>
+                                    <div class="new-price fw-semibold fs-5">
+                                        &dollar;11.00
+                                    </div>
+                                </div>
+                                <div class="categori-content-stars d-flex gap-1">
+                                    <div class="star-ico active "></div>
+                                    <div class="star-ico active "></div>
+                                    <div class="star-ico active "></div>
+                                    <div class="star-ico active "></div>
+                                    <div class="star-ico"></div>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-4 col-xl-3">
+                    <div class="categori-card-wrapper bg-secondary-subtle  rounded-5 py-3 px-1 ">
+                        <div class="categori-img-wrapper position-relative py-4">
+                            <img src="assets/img/categori/hazelnuts.png" alt="" class="w-100 h-100">
+                            <div class="categori-img-ticket position-absolute  color-bg-274C5B d-inline-block py-1 px-2 rounded-3 text-white">
+                                Nuts
+                            </div>
+                        </div>
+                        <div class="categori-content-wrapper px-3 d-flex flex-column gap-2 ">
+                            <div class="categori-content-heading color-274C5B fs-5 fw-semibold">
+                                Hazel Nuts
+                            </div>
+                            <hr />
+                            <div class="categori-content-word color-274C5B d-flex justify-content-between align-items-center">
+                                <div class="categori-content-price d-flex gap-2 align-items-center ">
+                                    <div class="old-price text-secondary text-decoration-line-through">
+                                        &dollar;20.00
+                                    </div>
+                                    <div class="new-price fw-semibold fs-5">
+                                        &dollar;25.00
+                                    </div>
+                                </div>
+                                <div class="categori-content-stars d-flex gap-1">
+                                    <div class="star-ico active "></div>
+                                    <div class="star-ico active "></div>
+                                    <div class="star-ico active "></div>
+                                    <div class="star-ico active "></div>
+                                    <div class="star-ico"></div>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-4 col-xl-3">
+                    <div class="categori-card-wrapper bg-secondary-subtle  rounded-5 py-3 px-1 ">
+                        <div class="categori-img-wrapper position-relative py-4">
+                            <img src="assets/img/categori/eggs.png" alt="" class="w-100 h-100">
+                            <div class="categori-img-ticket position-absolute  color-bg-274C5B d-inline-block py-1 px-2 rounded-3 text-white">
+                                Fresh
+                            </div>
+                        </div>
+                        <div class="categori-content-wrapper px-3 d-flex flex-column gap-2 ">
+                            <div class="categori-content-heading color-274C5B fs-5 fw-semibold">
+                                Gold Eggs
+                            </div>
+                            <hr />
+                            <div class="categori-content-word color-274C5B d-flex justify-content-between align-items-center">
+                                <div class="categori-content-price d-flex gap-2 align-items-center ">
+                                    <div class="old-price text-secondary text-decoration-line-through">
+                                        &dollar;20.00
+                                    </div>
+                                    <div class="new-price fw-semibold fs-5">
+                                        &dollar;17.00
+                                    </div>
+                                </div>
+                                <div class="categori-content-stars d-flex gap-1">
+                                    <div class="star-ico active "></div>
+                                    <div class="star-ico active "></div>
+                                    <div class="star-ico active "></div>
+                                    <div class="star-ico active "></div>
+                                    <div class="star-ico"></div>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-4 col-xl-3">
+                    <div class="categori-card-wrapper bg-secondary-subtle  rounded-5 py-3 px-1 ">
+                        <div class="categori-img-wrapper position-relative py-4">
+                            <img src="assets/img/categori/bread.png" alt="" class="w-100 h-100">
+                            <div class="categori-img-ticket position-absolute  color-bg-274C5B d-inline-block py-1 px-2 rounded-3 text-white">
+                                Fresh
+                            </div>
+                        </div>
+                        <div class="categori-content-wrapper px-3 d-flex flex-column gap-2 ">
+                            <div class="categori-content-heading color-274C5B fs-5 fw-semibold">
+                                Zelceo Bread
+                            </div>
+                            <hr />
+                            <div class="categori-content-word color-274C5B d-flex justify-content-between align-items-center">
+                                <div class="categori-content-price d-flex gap-2 align-items-center ">
+                                    <div class="old-price text-secondary text-decoration-line-through">
+                                        &dollar;20.00
+                                    </div>
+                                    <div class="new-price fw-semibold fs-5">
+                                        &dollar;13.00
+                                    </div>
+                                </div>
+                                <div class="categori-content-stars d-flex gap-1">
+                                    <div class="star-ico active "></div>
+                                    <div class="star-ico active "></div>
+                                    <div class="star-ico active "></div>
+                                    <div class="star-ico active "></div>
+                                    <div class="star-ico"></div>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+            </div>
+
+            <div class="about-end-btn d-flex justify-content-center py-5 ">
+
+                <a href="#?" class="header-banner-btn bg-blue d-flex my-5 align-items-center justify-content-center gap-2  py-3 px-4 rounded-2 fw-bold text-decoration-none overflow-hidden">
+                    <div class="text-white">Load More</div>
+                    <svg class="header-banner-btn-arrow-ico bg-blue-ico text-white" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-right-circle-fill" viewBox="0 0 16 16">
+                        <path d="M8 0a8 8 0 1 1 0 16A8 8 0 0 1 8 0M4.5 7.5a.5.5 0 0 0 0 1h5.793l-2.147 2.146a.5.5 0 0 0 .708.708l3-3a.5.5 0 0 0 0-.708l-3-3a.5.5 0 1 0-.708.708L10.293 7.5z" />
+                    </svg>
+                </a>
+            </div>
+        </div>
+    </section>
+
+
+
+
+
+
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script>
+        var swiper = new Swiper(".mySwiper", {
+            slidesPerView: 2,
+            spaceBetween: 30,
+            pagination: {
+                el: ".swiper-pagination",
+                clickable: true,
+            },
+        });
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+</body>
+
+</html>

@@ -1,0 +1,166 @@
+@import url('https://fonts.googleapis.com/css2?family=Petit+Formal+Script&display=swap');
+
+.color-274C5B{
+    color: #274C5B !important;
+}
+hr{
+    padding: 0 !important;
+    margin: 0 !important;
+ 
+}
+.color-bg-274C5B{
+    background-color: #274C5B !important;
+}
+
+.color-68A47F{
+    color: #68A47F;
+}
+.color-bg-F9F8F8{
+    background-color: #F9F8F8;
+}
+.petit-font{
+    font-family: "Petit Formal Script", cursive;
+}
+.header-link-custom{
+   transition: all 1s;
+    &:hover{
+        color: #6594a7 !important;
+    }
+}
+.search-input-wrapper{
+.header-search-input{
+    
+    &:focus{
+        outline: none;
+    }
+}
+.search-btn{
+    transition: all 0.5s;
+ background-color: #7EB693;
+&:hover{
+    
+    color: white;
+}
+}
+}
+
+.cart-item-wrapper{
+    .cart-ico{
+        transition: all 0.5s;
+        background-color: #7EB693;
+       &:hover{
+           
+           color: white;
+       }
+    }
+}
+
+
+.header-banner-btn{
+    background-color: #EFD372;
+    transition: all 0.5s;
+    &.bg-blue{
+        background-color: #274C5B !important;
+    }
+    &:hover{
+        background-color: #ffd84b;
+        .header-banner-btn-arrow-ico{
+            position: relative;
+           animation: ico 1s ease forwards;
+         
+           @keyframes ico {
+            1%{
+                opacity: 1;
+                right: 0;
+            }
+            100%{
+                opacity: 0;
+                right: -50px;
+            }
+            
+           }
+        }
+    }
+}
+/*
+<div class="header-banner-background-img-2 position-absolute top-0 z-5">
+<img src="assets/img/header-banner/img-2.png" alt="" class="w-100  ">
+</div>*/
+
+.mySwiper{
+    .header-banner-all-wrapper{
+        position: relative;
+       top: -400px;
+        transition: all 1s;
+    }
+    .swiper-slide-active{
+         
+        .header-banner-all-wrapper{
+          
+          top: 0;
+          
+        }
+       
+    }
+}
+
+
+.get-section-card-wrapper{
+
+    .get-section-card-content{
+       top: 0;
+
+    
+    }
+}
+
+.about-end-wrapper{
+         z-index: 5;
+    .ico-wrapper{
+        &::after{
+            content: "";
+            position: absolute;
+           padding: 10px;
+           border-radius: 50%;
+           
+            background-color: #efd47293;
+            left:15%;
+            top: 30%;
+            z-index: 2;
+        }
+    }
+}
+
+
+.categori-img-ticket{
+    left: 20px;
+    top: 10px;
+}
+.star-ico{
+    background: url('../img/categori/Star\ 6.svg') no-repeat;
+    height: 15px;
+    width: 13px;
+    filter:grayscale(100);
+    &.active{
+        filter:grayscale(0); 
+    }
+}
+.categori-img-wrapper{
+    height: 300px;
+    img{
+        object-fit: contain;
+        transition: all 0.2s;
+    }
+}
+.categori-card-wrapper{
+    transition: all 0.2s;
+    &:hover{
+        box-shadow: 0 10px 15px -3px rgba(0,0,0,0.1), 0 4px 6px -4px rgba(0,0,0,0.1);
+        .categori-img-wrapper{
+          
+            img{
+                transform: scale(1.1);
+            }
+        } 
+    }
+}
